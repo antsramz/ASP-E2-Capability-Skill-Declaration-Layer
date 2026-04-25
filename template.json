@@ -1,0 +1,24 @@
+{
+  "template_name": "ASP-E2 Capability & Skill Declaration Layer",
+  "extends": "ASP",
+  "version": "1.0",
+  "description": "Adds a structured capability and skill declaration map to ASP, enabling deterministic routing and task matching.",
+  "inputs": {
+    "agent_identity_packet": "Base ASP identity packet",
+    "declared_capabilities": "List or map of agent skills, tools, domains, and operational limits"
+  },
+  "outputs": {
+    "capability_enhanced_packet": "ASP identity packet enriched with structured capability and skill declarations"
+  },
+  "rules": {
+    "require_capability_schema": true,
+    "enforce_structured_capability_map": true,
+    "validate_declared_domains": true,
+    "canonicalize_capability_fields": true
+  },
+  "economics": {
+    "micropayment_required": true,
+    "billing_event": "capability_declaration"
+  }
+}
+
