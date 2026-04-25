@@ -1,5 +1,14 @@
 # ASP‑E2 — Capability & Skill Declaration Layer
 
+ASP‑E2 extends the Agent State Packet (ASP) by adding a deterministic
+capability and skill declaration map. This enables agents to advertise
+their competencies, tools, domains, and operational limits in a structured,
+machine‑readable format for downstream routing and task matching.
+
+This template is machine‑only, zero‑contact, and revenue‑generating by design.
+
+---
+
 ## Overview
 ASP‑E2 extends the Agent State Packet (ASP) by adding a deterministic
 capability and skill declaration map. This enables agents to advertise
@@ -27,4 +36,3 @@ Each invocation triggers a micropayment under the event:
 ## Extension Relationship
 This template inherits from and extends the ASP root template without
 modifying or altering the frozen ASP schema.
-
